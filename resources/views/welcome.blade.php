@@ -7,6 +7,17 @@
 
         <title>Laravel</title>
 
+        <form action="{{ url('/sendEmail') }}" method="post">
+            {{ csrf_field() }}
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            <div class="form-group">
+                <button type="submit" class="btn btn-md btn-primary">Send Email</button>
+            </div>
+        </form>
+
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
